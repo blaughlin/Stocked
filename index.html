@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <ul class = "navbar">
+       <li><img id = "logoBar" src = "logoCropped.png" ></li>
+        <li class = "navbarText"> <a href="/index.html">My Pantry</a></li>
+        <li class = "navbarText"><a href="/shoppingList.html">Shopping List</a></li>
+        <li class = "navbarText"><a href="../recipes">Recipes</a></li>
+        <li class = "navbarText"><a href="../addeeceipt">Add Receipt</a></li>
+        <li class = "navbarText"><a href="/about.html">About</a></li>
+        <li class = "navbarText"><a href="#" id="logoutLink">Logout</a></li>
+    </ul>
+
+    <br>
+
+<!-- <div class="pantry-container">
+  <table class="pantry-table" id="pantryTable">
+    <thead>
+      <tr>
+        <th>Items</th>
+        <th>#</th>
+        <th>Expires</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="pantryTableBody">
+    </tbody>
+  </table> -->
+
+  <div class="pantry-table">
+    <div class="table-header">
+            <span class="col-item">
+      <img src="menu.png" alt="Sort Menu" class="sort-icon" id="sortIcon">
+      Items
+      <div id="sortMenu" class="sort-menu hidden">
+        <div onclick="sortTable('date')">Sort by Date Added</div>
+        <div onclick="sortTable('alpha')">Sort Alphabetically</div>
+        <div onclick="sortTable('expire')">Sort by Expiring Soon</div>
+      </div>
+    </span>
+    <span class="col-item">Items</span>
+    <span class="col-amount">#</span>
+    <span class="col-expiration">Expires</span>
+    <span class="actions"></span>
+    </div>
+
+  <div id="pantryRows">
+    <!-- JS will populate each row here -->
+  </div>
+</div>
+
+  <div class="add-item-row">
+    <input type="text" id="pantryItem" placeholder="Add new item" />
+        <button id="addItemBtn">
+        <img src="addButton.png" alt="Add" style="width: 25px; height: 25px;" />
+        </button>
+                <button id="addReceiptBtn">
+        <img src="camera.png" alt="Add" style="width: 30px; height: 30px;" />
+        </button>
+  </div>
+</div>
+</body>
+<script type="module" src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+</html>

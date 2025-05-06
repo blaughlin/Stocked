@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <img id = "logo" src = "logoCropped.png" width="800" height="800">
+    <div class="authForms">
+        <form>
+            <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required />
+            </div>
+        </form>
+    </div>
+<p id = "tagline">STOCKED HELPS YOU KEEP TRACK OF WHAT IS IN YOUR KITCHEN. 
+    RECIPES ARE SUGGESTED BASED ON WHAT YOU HAVE. EXPIRED FOOD
+    IS REMOVED FROM YOUR PANTRY AND ADDED TO YOUR SHOPPING LIST.
+</p>
+        <input class="logBtn" type="submit" name="loginBtn" id="loginBtn" value="LOGIN">
+        <input class="logBtn" type="submit" name="registerBtn" id="registerBtn" value="REGISTER">
+
+</body>
+<script type="module" src="login.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<!-- <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyB_3nHkGT3ig0ICJlR5Dew1XtW4796Ih7k",
+    authDomain: "stocked-13b5c.firebaseapp.com",
+    projectId: "stocked-13b5c",
+    storageBucket: "stocked-13b5c.firebasestorage.app",
+    messagingSenderId: "662785189135",
+    appId: "1:662785189135:web:a42269266978813effca7a",
+    measurementId: "G-58XZ1JSY3W"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  const loginBtn = document.getElementById("loginBtn");
+  loginBtn.addEventListener("click", () => {
+    console.log("Login clicked");
+  });
+</script> -->
+</html>
